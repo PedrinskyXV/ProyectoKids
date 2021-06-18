@@ -2,6 +2,7 @@ package com.example.proyectokids;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -45,6 +46,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this, "Matematica", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getApplicationContext(), pregunta_mate_1.class);
+                startActivity(intent);
             }
         });
         lenguaImage.setOnClickListener(new View.OnClickListener() {

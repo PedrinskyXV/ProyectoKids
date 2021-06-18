@@ -6,4 +6,8 @@
     <style name="RoundedSquare">
         <item name="cornerSize">15%</item>
     </style>
+    <style name="Button.Math" parent="ThemeOverlay.AppCompat">
+        <item name="color">@color/bg_math</item>
+        <item name="backgroundTint">@android:color/background_dark</item>
+    </style>
 </resources>
