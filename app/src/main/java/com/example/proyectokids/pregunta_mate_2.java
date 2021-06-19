@@ -2,10 +2,13 @@ package com.example.proyectokids;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import com.google.android.material.snackbar.Snackbar;
 
 public class pregunta_mate_2 extends AppCompatActivity {
     private Button R1;
@@ -23,31 +26,36 @@ public class pregunta_mate_2 extends AppCompatActivity {
         R3 = (Button) findViewById(R.id.buttonR3);
         R4 = (Button) findViewById(R.id.buttonR4);
 
+        String correcta = "Respuesta Correcta :).";
+        String incorrecta = "Respuesta Incorrecta :(.";
+
         R1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(pregunta_mate_2.this, "Respuesta Incorrecta :(", Toast.LENGTH_SHORT).show();
+                Toast.makeText(pregunta_mate_2.this, incorrecta, Toast.LENGTH_SHORT).show();
             }
         });
 
         R2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(pregunta_mate_2.this, "Respuesta Incorrecta :(", Toast.LENGTH_SHORT).show();
+                Toast.makeText(pregunta_mate_2.this, incorrecta, Toast.LENGTH_SHORT).show();
             }
         });
 
         R3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(pregunta_mate_2.this, "Respuesta Incorrecta :(", Toast.LENGTH_SHORT).show();
+                Toast.makeText(pregunta_mate_2.this, incorrecta, Toast.LENGTH_SHORT).show();
             }
         });
 
         R4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(pregunta_mate_2.this, "Respuesta Correcta :)", Toast.LENGTH_SHORT).show();
+                Toast.makeText(pregunta_mate_2.this, correcta, Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getApplicationContext(), pregunta_mate_3.class);
+                startActivity(intent);
             }
         });
     }

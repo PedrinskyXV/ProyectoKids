@@ -8,9 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.google.android.material.snackbar.Snackbar;
-
-public class pregunta_mate_1 extends AppCompatActivity {
+public class pregunta_so2 extends AppCompatActivity {
     private Button R1;
     private Button R2;
     private Button R3;
@@ -19,43 +17,40 @@ public class pregunta_mate_1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pregunta_mate1);
+        setContentView(R.layout.activity_pregunta_so2);
 
         R1 = (Button) findViewById(R.id.buttonR1);
         R2 = (Button) findViewById(R.id.buttonR2);
         R3 = (Button) findViewById(R.id.buttonR3);
         R4 = (Button) findViewById(R.id.buttonR4);
 
-        String correcta = "Respuesta Correcta :).";
-        String incorrecta = "Respuesta Incorrecta :(.";
-
         R1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(pregunta_mate_1.this, correcta, Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(getApplicationContext(), pregunta_mate_2.class);
-                startActivity(intent);
+                Toast.makeText(pregunta_so2.this, "Respuesta Incorrecta :(", Toast.LENGTH_SHORT).show();
             }
         });
 
         R2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(pregunta_mate_1.this, incorrecta, Toast.LENGTH_SHORT).show();
+                Toast.makeText(pregunta_so2.this, "Respuesta Correcta :)", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getApplicationContext(), pregunta_so3.class);
+                startActivity(intent);
             }
         });
 
         R3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(pregunta_mate_1.this, incorrecta, Toast.LENGTH_SHORT).show();
+                Toast.makeText(pregunta_so2.this, "Respuesta Incorrecta :(", Toast.LENGTH_SHORT).show();
             }
         });
 
         R4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(pregunta_mate_1.this, incorrecta, Toast.LENGTH_SHORT).show();
+                Toast.makeText(pregunta_so2.this, "Respuesta Incorrecta :(", Toast.LENGTH_SHORT).show();
             }
         });
     }

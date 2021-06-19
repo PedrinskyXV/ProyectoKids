@@ -41,22 +41,21 @@ public class MainActivity extends AppCompatActivity {
         cienciasImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Snackbar.make(v, "Ciencias", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Toast.makeText(MainActivity.this, "Ciencias Naturales", Toast.LENGTH_SHORT).show();
             }
         });
         socialesImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Snackbar.make(v, "Sociales", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Toast.makeText(MainActivity.this, "Sociales", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getApplicationContext(), pregunta_so1.class);
+                startActivity(intent);
             }
         });
         mateImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Snackbar.make(v, "Matematica", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Toast.makeText(MainActivity.this, "Matematica", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getApplicationContext(), pregunta_mate_1.class);
                 startActivity(intent);
             }
@@ -64,8 +63,7 @@ public class MainActivity extends AppCompatActivity {
         lenguaImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Snackbar.make(v, "Lenguaje", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Toast.makeText(MainActivity.this, "Lenguaje y literatura", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -73,9 +71,8 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Toast.makeText(MainActivity.this, "Integrantes", Toast.LENGTH_SHORT).show();
 
-                Snackbar.make(view, "Integrantes del grupo", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
                 Intent intent = new Intent(getApplicationContext(), integrantes.class);
                 startActivity(intent);
             }

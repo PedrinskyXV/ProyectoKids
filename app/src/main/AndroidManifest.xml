@@ -10,8 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoKids">
         <activity android:name=".integrantes"></activity>
+        <activity android:name=".pregunta_mate_5" />
+        <activity android:name=".pregunta_mate_4" />
+        <activity android:name=".pregunta_mate_3" />
         <activity android:name=".pregunta_mate_2" />
         <activity android:name=".pregunta_mate_1" />
+        <activity android:name=".pregunta_so5" />
+        <activity android:name=".pregunta_so4" />
+        <activity android:name=".pregunta_so3" />
+        <activity android:name=".pregunta_so2" />
+        <activity android:name=".pregunta_so1" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
