@@ -14,10 +14,10 @@ public class integrantes extends AppCompatActivity {
         setContentView(R.layout.activity_integrantes);
         inte = (TextView) findViewById(R.id.txtv_Integrantes);
         String integrantes = "Integrantes: \n";
-        integrantes += "Pedro Alexander Perez Rosales, #323418 \n";
-        integrantes += "William Alexander Vasques Hernández, #273815 \n";
-        integrantes += "Milton Gerardo Aguilera Ramos, #328218 \n";
-        integrantes += "Josue Salvador Reyes Melgar, #229415 \n";
+        integrantes += "- Pedro Alexander Perez Rosales, #323418 \n";
+        integrantes += "- William Alexander Vasques Hernández, #273815 \n";
+        integrantes += "- Milton Gerardo Aguilera Ramos, #328218 \n";
+        integrantes += "- Josue Salvador Reyes Melgar, #229415 \n";
 
         inte.setText(integrantes);
     }

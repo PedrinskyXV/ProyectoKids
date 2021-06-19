@@ -32,7 +32,7 @@
         android:layout_marginTop="228dp"
         android:layout_marginEnd="8dp"
         android:fontFamily="@font/mousememoirs"
-        android:textColor="@color/bg_prin2"
+        android:textColor="@color/bg_prin3"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
