@@ -16,4 +16,6 @@
     <color name="bg_ciencias">#35D461</color>
     <color name="bg_sociales">#37B6F6</color>
     <color name="bg_lenguaje">#FB565A</color>
+    <color name="back_app">#03A9F4</color>
+    <color name="back_app2">#2196F3</color>
 </resources>
